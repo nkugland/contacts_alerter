@@ -1,0 +1,24 @@
+<!-- https://superuser.com/questions/542639/is-launchd-supposed-to-pick-up-missed-events -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.example.contacts_alerter</string>
+    <key>OnDemand</key>
+    <true/>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/nkugland/Documents/PROJECTS/github/contacts_alerter/contacts_alerter_exec.sh</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>7200</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/nkugland/Documents/PROJECTS/github/contacts_alerter/launchd.stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>//Users/nkugland/Documents/PROJECTS/github/contacts_alerter/launchd.stderr.log</string>
+
+</dict>
+</plist>
