@@ -69,8 +69,9 @@ client = gdata.contacts.client.ContactsClient(source='contacts-alerter')
 
 auth2token.authorize(client)
 
+#TODO change this to something smarter
+max_results = 10000
 
-max_results = 100
 start_index = 1
 query = gdata.contacts.client.ContactsQuery()
 query.max_results = max_results
