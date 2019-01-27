@@ -83,8 +83,11 @@ contacts_feed = client.GetContacts(q=query)
 groups_feed = client.GetGroups()
 
 
+# TODO put these into a config file
 followup_groups = {'84f82ca08e556da':4,		#times in weeks
-					'5abdac650bbd1b4c':2}
+				   '5abdac650bbd1b4c':2,
+				   '26eba5f10bd7ce63':8,
+				  }
 
 now = datetime.datetime.now()
 
